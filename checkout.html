@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout & Autenticazione — Verticality</title>
+    <link rel="stylesheet" href="checkout-style.css">
+</head>
+<body>
+
+    <nav class="checkout-nav">
+        <a href="index.html" class="back-link">← Torna alla Home</a>
+        <span class="logo-text">▲ Verticality Checkout</span>
+    </nav>
+
+    <div class="checkout-container">
+
+        <section class="checkout-card">
+            <h2>Riepilogo Ordine</h2>
+            <div id="plan-summary" class="plan-summary">
+                <p class="plan-name" id="selected-plan-name">Caricamento piano...</p>
+                <div class="plan-price" id="selected-plan-price">€0</div>
+            </div>
+        </section>
+
+        <section class="checkout-card" id="auth-section">
+            <div id="user-welcome" class="hidden">
+                <p>Accesso effettuato come: <strong id="logged-user-email"></strong></p>
+                <button id="btn-logout" class="btn-link">Disconnetti / Cambia account</button>
+            </div>
+
+            <div id="auth-forms">
+                <div class="auth-tabs">
+                    <button id="tab-login" class="tab-btn active">Accedi</button>
+                    <button id="tab-register" class="tab-btn">Registrati</button>
+                </div>
+
+                <form id="form-login" class="auth-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required placeholder="nome@esempio.it">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Accedi e Procedi</button>
+                </form>
+
+                <form id="form-register" class="auth-form hidden">
+                    <div class="form-group">
+                        <label for="reg-email">Email</label>
+                        <input type="email" id="reg-email" required placeholder="nome@esempio.it">
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Password</label>
+                        <input type="password" id="reg-password" required placeholder="Crea una password">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Crea Account e Procedi</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="checkout-card" id="payment-section">
+            <h2>Metodo di Pagamento</h2>
+            <form id="form-payment">
+                <div class="form-group">
+                    <label for="card-number">Numero Carta</label>
+                    <input type="text" id="card-number" required placeholder="4000 1234 5678 9010" maxlength="19">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="card-expiry">Scadenza</label>
+                        <input type="text" id="card-expiry" required placeholder="MM/AA" maxlength="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="card-cvv">CVV</label>
+                        <input type="password" id="card-cvv" required placeholder="123" maxlength="4">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success btn-block" id="btn-pay">Conferma e Paga</button>
+            </form>
+        </section>
+
+        <div id="payment-success" class="checkout-card success-card hidden">
+            <div class="success-icon">✓</div>
+            <h2>Pagamento Effettuato con Successo!</h2>
+            <p>Grazie per l'acquisto. Abbiamo inviato la ricevuta di conferma alla tua email.</p>
+            <a href="index.html" class="btn btn-primary mt-20">Torna alla Home</a>
+        </div>
+
+    </div>
+
+    <script src="checkout-script.js"></script>
+</body>
+</html>

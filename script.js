@@ -1,6 +1,5 @@
 /**
- * Verticality Climbing Gym - JS Logic
- * Gestione esclusiva dell'accordion FAQ 
+ * Verticality Climbing Gym
  */
 
 document.addEventListener('DOMContentLoaded', () => {
