@@ -1,4 +1,4 @@
-/* --- VARIABILI GLOBALI (GitHub Dark Theme Palette) --- */
+/* --- VARIABILI GLOBALI --- */
 :root {
     --bg-dark: #0d1117;
     --bg-card: #161b22;
@@ -31,7 +31,7 @@ body {
     line-height: 1.6;
 }
 
-/* --- NAVBAR (GitHub Style Sticky Header) --- */
+/* -- NAVBAR -- */
 .navbar {
     background-color: #161b22;
     border-bottom: 1px solid var(--border-color);
@@ -133,7 +133,7 @@ body {
     margin-top: 15px;
 }
 
-/* --- HERO SECTION (Big Walls Style) --- */
+/* --- HERO SECTION --- */
 .hero {
     position: relative;
     background: linear-gradient(rgba(13, 17, 23, 0.75), rgba(13, 17, 23, 0.95)),
@@ -500,4 +500,64 @@ body {
     text-align: center;
     font-size: 0.85rem;
     color: var(--text-muted);
+}
+
+.boulder-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.boulder-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.boulder-container .card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boulder-container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* Bottone Visualizza */
+.btn-visualizza {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.btn-visualizza:hover {
+  background-color: #0056b3;
 }
