@@ -1,0 +1,212 @@
+/* --- VARIABILI GLOBALI --- */
+:root {
+    --bg-dark: #0d1117;
+    --bg-card: #161b22;
+    --bg-card-hover: #1f242c;
+    --border-color: #30363d;
+    --accent-orange: #f77737;
+    --accent-blue: #58a6ff;
+    --accent-green: #3fb950;
+    --text-main: #c9d1d9;
+    --text-heading: #ffffff;
+    --text-muted: #8b949e;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #161b22;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-icon {
+    color: var(--accent-orange);
+    font-size: 1.4rem;
+}
+
+.logo-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-orange);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--bg-card);
+    color: var(--text-heading);
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--border-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--accent-orange);
+    color: var(--accent-orange);
+}
+
+.btn-outline:hover {
+    background-color: var(--accent-orange);
+    color: #ffffff;
+}
+
+.btn-sm {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--text-heading);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.section-desc {
+    text-align: center;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 35px auto;
+}
+
+.wall-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.wall-title {
+    color: var(--text-heading);
+    font-size: 1.5rem;
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+    background-color: #12161f;
+}
+
+.wall-image-box {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+}
+
+.wall-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.wall-body {
+    padding: 25px;
+}
+
+.wall-body p {
+    color: var(--text-main);
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+
+.footer {
+    border-top: 1px solid var(--border-color);
+    background-color: #161b22;
+    padding: 40px 20px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer-col h4 {
+    color: var(--text-heading);
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.footer-col p {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    margin-bottom: 6px;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border-color);
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}

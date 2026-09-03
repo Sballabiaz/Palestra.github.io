@@ -142,7 +142,6 @@ body {
 
 .hidden { display: none !important; }
 
-/* Succes state */
 .success-card { text-align: center; padding: 40px 20px; }
 .success-icon {
     width: 60px; height: 60px;
