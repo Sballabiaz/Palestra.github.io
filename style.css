@@ -565,3 +565,24 @@ body {
 .btn-visualizza:hover {
   background-color: #e0662b;
 }
+
+/* --- SEZIONE BAR --- */
+.bar-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--accent-orange);
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bar-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 35px; /* Spazio maggiorato tra il testo e il bottone */
+}
+
+.bar-action {
+    text-align: center;
+}
